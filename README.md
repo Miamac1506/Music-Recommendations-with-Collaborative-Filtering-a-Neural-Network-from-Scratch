@@ -5,18 +5,14 @@ A two-part machine learning project:
 - **Part 1: Recommender system.** Recommend artists to radio listeners using **item-item**, **user-user**, and **hybrid** collaborative filtering based on cosine similarity.
 - **Part 2: Neural network in NumPy.** Build a 2-layer neural network from scratch (forward propagation, cross-entropy cost, backpropagation, gradient descent) and study how the learning rate affects weight updates.
 
-> Machine Learning II — Assignment 3 · Mia Mac
-
 ---
 
 ## Repository Contents
 
 | File | Description |
 |---|---|
-| `[ML-II] Mia_Mac_Assignment_3_1.ipynb` | Part 1: collaborative filtering recommender |
-| `[ML-II] Mia_Mac_Assignment_3_1.html` | HTML export of Part 1 (view without running) |
-| `[ML-II] Mia_Mac_Assignment_3_2.ipynb` | Part 2: neural network built with NumPy |
-| `[ML-II] Mia_Mac_Assignment_3_2.html` | HTML export of Part 2 (view without running) |
+| `Part 1.jpynb` | Part 1: collaborative filtering recommender |
+| `Part 2.ipynb` | Part 2: neural network built with NumPy |
 | `radio_songs.csv` | User × artist listening data |
 
 ---
@@ -119,43 +115,3 @@ The network was trained for 10 gradient descent iterations at three learning rat
 - 0.0001 makes negligible updates, so training would be very slow.
 - 0.01 makes stable, consistent updates.
 - With a learning rate of 1, the step size **shrinks across iterations**. The gradient itself gets smaller as the weights move, which suggests the optimizer is heading toward a minimum despite the large step size.
-
----
-
-## Getting Started
-
-### Requirements
-- Python 3.8+
-- NumPy, pandas
-- scikit-learn, SciPy
-- Matplotlib, seaborn
-- Jupyter
-
-```bash
-pip install numpy pandas scikit-learn scipy matplotlib seaborn jupyter
-```
-
-### Running the Notebooks
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-jupyter notebook
-```
-
-Before running Part 1, point the data path to your copy of the CSV:
-
-```python
-df = pd.read_csv('radio_songs.csv')
-```
-
-Part 2 generates its own data, so it needs no external files.
-
-Don't want to run anything? Open the `.html` files to see the notebooks with all their outputs.
-
-## Built With
-- [NumPy](https://numpy.org/) · [pandas](https://pandas.pydata.org/)
-- [scikit-learn](https://scikit-learn.org/) · [SciPy](https://scipy.org/)
-- [Matplotlib](https://matplotlib.org/) · [seaborn](https://seaborn.pydata.org/)
-
-## Author
-**Mia Mac**
